@@ -56,13 +56,13 @@ const UseCases = () => {
     icon: <RocketColorIcon className={styles.useCases__ico}/>,
     pic: StakeWen,
     title: "Stake WEN",
-    desc: "Deposit WEN to the Stability Pool and earn collateral from liquidation fees and MGM rewards.",
+    desc: "Deposit WEN to the Stability Pool and earn collateral assets from liquidation fees, and MGM rewards.",
     comingSoon: false,
   }, {
     icon: <FireIcon className={styles.useCases__ico}/>,
     pic: StakeMgm,
     title: "Stake MGM",
-    desc: "Stake MGM to earn a share of platform revenue - from fees and sustainable real yield through LSDs and RWAs.",
+    desc: "Stake MGM to earn a share of platform revenue - from fees and sustainable real yield through LSTs and RWAs.",
     comingSoon: true,
   }, {
     icon: <RedeemWenIcon className={styles.useCases__ico}/>,

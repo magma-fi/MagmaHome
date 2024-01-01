@@ -7,7 +7,7 @@ function LauchApp() {
   return (
     <Link className={styles.lauchApp} to="https://app.magma.finance">
       <RocketIcon className={styles.lauchApp__icon}/>
-      <span className={styles.lauchApp__text}>Lauch Magma</span>
+      <span className={styles.lauchApp__text}>Launch Magma</span>
     </Link>
   )
 }

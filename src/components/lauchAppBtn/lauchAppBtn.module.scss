@@ -1,0 +1,6 @@
+
+@import '../../static/css/mixins.scss';
+
+.lauchApp {
+  @include btnPrimaryBig;
+}

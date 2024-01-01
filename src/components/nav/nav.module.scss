@@ -1,0 +1,115 @@
+@import '../../static/css/mixins.scss';
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 0;
+    &__text {
+      margin: 0 10px;
+    }
+    >svg {
+      fill: var(--color);
+    }
+    &:hover {
+      >svg {
+        fill: var(--button-primary-stroke);
+      }
+
+    }
+  }
+  &__lang {
+    position: relative;
+    &__curLang {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      >svg {
+        fill: var(--color);
+      }
+      &__arrow {
+        margin-left: 10px;
+      }
+      &__arrowActive {
+        transform: rotate(180deg);
+      }
+      &__text {
+        display: none;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      position: absolute;
+      right:0;
+      top: 40px;
+      border: 1px solid var(--container-border-color);
+      background: var(--container-bg-color);
+      border-radius: 16px;
+      padding: 8px;
+      z-index: 999;
+    }
+    &__item {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-start;
+      color: var(--text-secondary);
+      font-size:16px;
+      line-height: 1;
+      font-weight: 400;
+      padding: 16px 38px 16px 16px;
+      border: 1px solid transparent;
+      border-radius: 45px;
+      cursor: pointer;
+      >svg {
+        fill: var(--text-secondary);
+        margin-right: 8px;
+      }
+      &:hover {
+        border: 1px solid var(--actived-border-color);
+        background: var(--actived-background-color);
+        color: var(--color);
+        font-weight: 700;
+        >svg {
+          fill: var(--color)
+        }
+      }
+    }
+
+  }
+}
+
+
+
+@media (max-width: 859.98px) {
+  .nav {
+    margin-top: 48px;
+    flex-direction: column;
+    &__lang {
+      &__list {
+        right: initial;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &__curLang {
+        &__text {
+          display: block;
+          margin-left: 10px;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

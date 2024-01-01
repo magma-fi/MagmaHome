@@ -1,0 +1,107 @@
+@import './reset.scss';
+@import './font.scss';
+
+
+html, body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  line-height: 1;
+  color: var(--color);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-color);
+}
+
+:root {
+  box-sizing: border-box;
+  --background-color: #0d040c;
+  --color: #F6F6F7;
+  --text-secondary: #A3A2AC;
+  --button-primary-text: #06020B;
+  --button-primary-stroke: #faac34;
+  --button-primary-fill: linear-gradient(270deg, #FFA600 0%, #FF9407 23.42%, #FF7D11 53.74%, #FF6A19 79.79%, #FF5B1F 99.77%);
+  --button-primary-fill-hover: linear-gradient(0deg, rgba(255, 255, 255, .17) 0%, rgba(255, 255, 255, .17) 100%), linear-gradient(267deg, #FFA600 0%, #FF9407 23.42%, #FF7D11 53.74%, #FF6A19 79.79%, #FF5B1F 99.77%);
+  --button-primary-fill-pressed: linear-gradient(0deg, rgba(0, 0, 0, .13) 0%, rgba(0, 0, 0, .13) 100%), linear-gradient(267deg, #FFA600 0%, #FF9407 23.42%, #FF7D11 53.74%, #FF6A19 79.79%, #FF5B1F 99.77%), linear-gradient(267deg, #FE8C00 0%, #F83600 99.77%);
+  --card-border-color: #2C2941;
+  --container-border-color: #2a2123;
+  --container-bg-color: #191013;
+  --actived-background-color: #1f1312;
+  --actived-border-color: #302421;
+}
+
+
+*:not(img):not(video):not(svg), *:after, *:before {
+  box-sizing: inherit;
+}
+
+a {
+  color: var(--color);
+  text-decoration: none;
+  &:hover {
+    color: var(--button-primary-stroke);
+  }
+}
+
+
+#root {
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Metropolis', sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 20px 120px;
+}
+
+.layout {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+@media (orientation: landscape) {
+  body {
+    background-image: url('../images/background-landscape-dark@2x.webp');
+  }
+}
+
+
+@media (orientation: portrait) {
+  body {
+    background-image: url('../images/background-portrait-dark@2x.webp');
+  }
+}
+
+
+@media (min-width: 860px) and (max-width: 1199.98px) {
+  .page {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+
+@media (max-width: 859.98px) {
+  .page {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 539.98px) {
+  .page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+

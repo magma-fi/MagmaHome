@@ -1,0 +1,62 @@
+
+@mixin moduleGap($top: 126px) {
+  margin-top: $top;
+}
+
+@mixin btnPrimaryBig($fontSize: 20px, $padding:16px 24px, $iconSize: 32px) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: $padding;
+  border-radius: 999px;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 700;
+  font-size: $fontSize;
+  line-height: 1;
+  background: var(--button-primary-fill);
+  border: 1px solid var(--button-primary-stroke);
+  color: var(----button-primary-text);
+  &:hover {
+    background: var(--button-primary-fill-hover);
+  }
+
+  &:active {
+    background: var(--button-primary-fill-pressed);
+  }
+
+  &__icon {
+    width: $iconSize;
+    height: $iconSize;
+  }
+  &__text {
+    color: var(--button-primary-text);
+  }
+}
+
+
+@mixin textTips() {
+  position: relative;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: transparent;
+  background: var(--button-primary-fill);
+  background-clip: text;
+  border-radius: 49px;
+  padding: 4px 8px;
+  vertical-align: middle;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+    background: var(--button-primary-fill);
+    opacity: .1;
+    border-radius: 49px;
+  }
+}

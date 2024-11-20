@@ -33,7 +33,7 @@ const Slogan = () => {
     <section className={classNames(styles.module, styles.slogan)}>
       <SloganSvg className={styles.slogan__pic}/>
       <h1 className={styles.slogan__sloganText}>Non-custodial and decentralized LST/RWA-backed stablecoin</h1>
-      <p className={classNames(styles.module__descText, styles.slogan__descText)}>Magma is a new DeFi primitive that enables users to mint a stablecoin, WEN. Fully collateralized by liquid staking tokens (LSTs) and real world assets (RWAs), WEN opens DeFi doors for projects and users alike through providing a native stable asset for the ecosystem.</p>
+      <p className={classNames(styles.module__descText, styles.slogan__descText)}>Magma is a new DeFi primitive that enables users to mint a stablecoin, ioUSD. Fully collateralized by liquid staking tokens (LSTs) and real world assets (RWAs), ioUSD opens DeFi doors for projects and users alike through providing a native stable asset for the ecosystem.</p>
       <div className={styles.slogan__lauchApp}>
         <LauchAppBtn/>
       </div>
@@ -49,14 +49,14 @@ const UseCases = () => {
   const listData = [{
     icon: <BorrowWenIcon className={styles.useCases__ico}/>,
     pic: BorrowWen,
-    title: "Borrow WEN",
+    title: "Borrow ioUSD",
     desc: "Get an interest-free loan using IOTX as collateral. DAI and USDC coming soon.",
     comingSoon: false,
   }, {
     icon: <RocketColorIcon className={styles.useCases__ico}/>,
     pic: StakeWen,
-    title: "Stake WEN",
-    desc: "Deposit WEN to the Stability Pool and earn collateral assets from liquidation fees, and MGM rewards.",
+    title: "Stake ioUSD",
+    desc: "Deposit ioUSD to the Stability Pool and earn collateral assets from liquidation fees, and MGM rewards.",
     comingSoon: false,
   }, {
     icon: <FireIcon className={styles.useCases__ico}/>,
@@ -67,8 +67,8 @@ const UseCases = () => {
   }, {
     icon: <RedeemWenIcon className={styles.useCases__ico}/>,
     pic: RedeemWen,
-    title: "Redeem WEN",
-    desc: "1 WEN for 1 USD even when the WEN peg falls below $1.",
+    title: "Redeem ioUSD",
+    desc: "1 ioUSD for 1 USD even when the ioUSD peg falls below $1.",
     comingSoon: false,
   }]
 
@@ -125,7 +125,7 @@ const KeyBenfits = () => {
       </div>
     ),
     title: "Interest-free loans",
-    desc: "Free your liquidity with interest-free loans. Use the WEN stablecoin to participate in ecosystem DeFi and DePin opportunities.",
+    desc: "Free your liquidity with interest-free loans. Use the ioUSD stablecoin to participate in ecosystem DeFi and DePin opportunities.",
   }, {
     icon: (
       <div className={styles.keyBenfits__ico}>
@@ -143,7 +143,7 @@ const KeyBenfits = () => {
       </div>
     ),
     title: "Hard price floor",
-    desc: "WEN maintains a price floor at $1 through a direct stability mechanism and arbitrage to restore the peg when it deviates.",
+    desc: "ioUSD maintains a price floor at $1 through a direct stability mechanism and arbitrage to restore the peg when it deviates.",
   }, {
     icon: (
       <div className={styles.keyBenfits__ico}>
@@ -152,7 +152,7 @@ const KeyBenfits = () => {
       </div>
     ),
     title: "Governance minimized",
-    desc: "Magma algorithmically manages its monetary policies, utilizing WEN redemption rates to set borrowing fees and stabilize WEN's value, ensuring a predictable and controlled ecosystem."
+    desc: "Magma algorithmically manages its monetary policies, utilizing ioUSD redemption rates to set borrowing fees and stabilize ioUSD's value, ensuring a predictable and controlled ecosystem."
   }]
   return (
     <section className={classNames(styles.module, styles.keyBenfits)}>
@@ -182,14 +182,14 @@ const Roadmap = () => {
   const listData = [{
     phase: "phase 1",
     phaseTime: "Late 2023",
-    title: "Minting WEN using IOTX",
-    desc: "This can be considered an early release or beta version. Minting will be limited to 1,000 WEN during this testing period.",
+    title: "Minting ioUSD using IOTX",
+    desc: "This can be considered an early release or beta version. Minting will be limited to 1,000 ioUSD during this testing period.",
     finish: true,
   }, {
     phase: "phase 2",
     phaseTime: "Late Q1 or early Q2 2024",
-    title: "WEN deposit rewards and sustainable real yield",
-    desc: "Magma will enable deposit rewards for WEN. The income to support these rewards will be sustainably earned through the underlying LST.",
+    title: "ioUSD deposit rewards and sustainable real yield",
+    desc: "Magma will enable deposit rewards for ioUSD. The income to support these rewards will be sustainably earned through the underlying LST.",
     finish: false,
   }, {
     phase: "phase 3",
